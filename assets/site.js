@@ -2,6 +2,14 @@
 // "try it" mini shoot. Texts come from the page (#site-text), so one script serves
 // every language.
 (function () {
+  // The language menu closes on a tap anywhere else
+  var langMenu = document.querySelector('.lang-menu');
+  if (langMenu) {
+    document.addEventListener('click', function (ev) {
+      if (langMenu.open && !langMenu.contains(ev.target)) langMenu.open = false;
+    });
+  }
+
   var dataEl = document.getElementById('site-text');
   if (!dataEl) return;
   var text = JSON.parse(dataEl.textContent);
@@ -46,8 +54,10 @@
     };
   }
 
+  var QUOTES = { en: ['“', '”'], ru: ['«', '»'], es: ['«', '»'], de: ['„', '“'], pt: ['“', '”'] };
   function quoted(say) {
-    return text.quotes === 'en' ? '“' + say + '”' : '«' + say + '»';
+    var q = QUOTES[text.quotes] || QUOTES.en;
+    return q[0] + say + q[1];
   }
 
   // Hero: the camera screen goes through the hints by itself, the voice line and the

@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preciosa: ein Fotograf in deiner Tasche</title>
+<meta name="description" content="Preciosa zeigt dir, wo du stehen und wie du das Handy halten sollst, passt den Zoom an, richtet den Horizont aus und macht das Foto selbst. Deine Fotos verlassen das Handy nie.">
+<link rel="canonical" href="https://preciosa.cam/de/">
+<link rel="alternate" hreflang="en" href="https://preciosa.cam/">
+<link rel="alternate" hreflang="ru" href="https://preciosa.cam/ru/">
+<link rel="alternate" hreflang="es" href="https://preciosa.cam/es/">
+<link rel="alternate" hreflang="de" href="https://preciosa.cam/de/">
+<link rel="alternate" hreflang="pt" href="https://preciosa.cam/pt/">
+<link rel="alternate" hreflang="x-default" href="https://preciosa.cam/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Preciosa: ein Fotograf in deiner Tasche">
+<meta property="og:description" content="Hinweise, Auto-Zoom und gerader Horizont: Die Kamera führt dich von Blickwinkel zu Blickwinkel und löst selbst aus. Kostenlos für Android.">
+<meta property="og:url" content="https://preciosa.cam/de/">
+<meta property="og:image" content="https://preciosa.cam/assets/icon-512.png">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0b0919">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Tenor+Sans&display=swap">
+<link rel="stylesheet" href="/assets/style.css?v=202611272230">
+</head>
+<body>
+<div class="bg" aria-hidden="true">
+  <div class="bg-circle bg-circle--1"></div>
+  <div class="bg-circle bg-circle--2"></div>
+  <div class="bg-circle bg-circle--3"></div>
+  <canvas></canvas>
+</div>
+<a class="skip" href="#main">Zum Inhalt springen</a>
+
+<header class="header">
+  <div class="wrap bar">
+    <a class="brand" href="/de/"><img src="/assets/logo-light.png" alt="" width="54" height="54">Preciosa</a>
+    <nav class="nav" aria-label="Hauptmenü">
+      <a href="#try">Ausprobieren</a>
+      <a href="#how">So funktioniert’s</a>
+      <a href="#modes">Modi</a>
+      <a href="#privacy">Datenschutz</a>
+    </nav>
+    <div class="bar-end">
+      <details class="lang-menu"><summary aria-label="Sprache">DE<svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5L5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary><ul><li><a href="/" hreflang="en" lang="en">English</a></li><li><a href="/ru/" hreflang="ru" lang="ru">Русский</a></li><li><a href="/es/" hreflang="es" lang="es">Español</a></li><li><a href="/de/" hreflang="de" lang="de" aria-current="page">Deutsch</a></li><li><a href="/pt/" hreflang="pt" lang="pt">Português</a></li></ul></details>
+      <a class="pro-badge" href="#pro" aria-label="Pro: früher Zugang"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>PRO</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="wrap">
+    <div class="viewfinder">
+      <div class="grid3" aria-hidden="true"></div>
+      <div class="corner corner--tl" aria-hidden="true"></div>
+      <div class="corner corner--tr" aria-hidden="true"></div>
+      <div class="corner corner--bl" aria-hidden="true"></div>
+      <div class="corner corner--br" aria-hidden="true"></div>
+
+      <div class="vf-top" aria-hidden="true"><span class="pill pill--accent">AUTO</span><span class="pill">01 / 12</span></div>
+
+      <div class="vf-body">
+        <div class="hero-text">
+          <span class="badge">Kostenlos für Android · <span class="nocaps">iOS</span> bald</span>
+          <h1 style="--fit: 10.8">Ein&nbsp;Fotograf<br>in&nbsp;deiner&nbsp;Tasche</h1>
+          <p class="lead">Die Kamera zeigt dir, wo du stehen und wie du das Handy halten sollst, passt den Zoom selbst an und richtet den Horizont aus. Sobald der Bildausschnitt stimmt, macht sie das Foto selbst.</p>
+          <div class="btns">
+            <a class="btn btn--light" href="https://play.google.com/store/apps/details?id=cam.preciosa.smartcamera&amp;referrer=utm_source%3Dsite%26utm_medium%3Dhero_de">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 3.5v17l14-8.5z"/></svg>Jetzt bei Google Play</a>
+            <span class="btn btn--soon" title="Die iPhone-Version ist in Arbeit"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Bald für iOS</span>
+            <a class="btn btn--ghost" href="#try">Gleich hier ausprobieren</a>
+          </div>
+          <ul class="facts">
+            <li>Fotos verlassen nie das Handy</li>
+            <li>Ohne Anmeldung</li>
+            <li>5 Sprachen</li>
+          </ul>
+        </div>
+
+        <div class="phone-col">
+          <!-- To show a screen recording instead: put assets/demo.mp4 and replace the
+               phone's content with
+               <video src="/assets/demo.mp4" autoplay muted loop playsinline></video> -->
+          <div class="phone" id="hero-phone" role="img" aria-label="Der Kamerabildschirm von Preciosa mit einem Hinweis zum Bildausschnitt">
+            <div class="screen-bg"></div>
+            <div class="screen-grid"></div>
+            <div class="person"><img src="/assets/model-after.webp" alt="" width="138" height="340" data-model></div>
+            <div class="frame is-ok"></div>
+            <div class="screen-top"><span>2 / 12</span><span>AUTO</span></div>
+            <div class="capsule"><i></i></div>
+            <div class="screen-hint"><span data-hint>Super, so halten</span></div>
+            <div class="flash"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vf-bottom">
+        <div class="voice">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9b8eff" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M11 5L6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 010 7"/><path d="M19 5a10 10 0 010 14"/></svg>
+          <span data-voice aria-live="off">„Geh einen Schritt zurück“</span>
+        </div>
+        <div class="level" aria-hidden="true">
+          <div class="level-track"><div class="level-dot" data-level-dot></div></div>
+          <span data-level-val>0.0°</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="try" class="section section--alt">
+  <div class="wrap try">
+    <div class="try-text">
+      <span class="eyebrow">Gleich hier ausprobieren</span>
+      <h2 class="h2">Du hältst das Handy.<br>Die Kamera führt Regie.</h2>
+      <p>Lies den Hinweis auf dem Handybildschirm und tippe auf die hervorgehobene Taste. Folge vier Hinweisen, und das Foto entsteht von selbst. Die App funktioniert genauso, nur mit der echten Kamera und einer Stimme.</p>
+    </div>
+    <div class="phone-col">
+      <div class="phone" id="try-phone">
+        <div class="screen-bg"></div>
+        <div class="screen-grid"></div>
+        <div class="person" aria-hidden="true"><img src="/assets/model-before.webp" alt="" width="81" height="340" data-model></div>
+        <div class="frame" aria-hidden="true"></div>
+        <div class="screen-top"><span data-counter>1 / 4</span><span>AUTO</span></div>
+        <div class="capsule" aria-hidden="true"><i></i></div>
+        <div class="screen-hint"><span data-hint aria-live="polite">Neige das Handy etwas nach unten</span></div>
+        <div class="flash" aria-hidden="true"></div>
+        <div class="shot" hidden>
+          <strong>Aufgenommen!</strong>
+          <span>„Fertig, ihr dürft euch bewegen“</span>
+          <button type="button">Nochmal</button>
+        </div>
+      </div>
+    </div>
+    <div class="controls">
+      <span id="try-q">Tippe, worum die Kamera bittet:</span>
+      <div class="row" role="group" aria-labelledby="try-q">
+        <button type="button" data-answer="tilt">Handy neigen</button>
+        <button type="button" data-answer="back">Schritt zurück</button>
+        <button type="button" data-answer="pose">Um die Pose bitten</button>
+        <button type="button" data-answer="down">Handy tiefer</button>
+      </div>
+      <span class="wrong" data-wrong aria-live="polite"></span>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="section">
+  <div class="wrap">
+    <div class="say">
+      <h2>Die Kamera sagt dir, was zu tun ist</h2>
+      <p>Du hältst nur das Handy und folgst den Hinweisen.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <span class="num">01</span>
+        <h3>Modus</h3>
+        <p>Wähle den Taschenfotografen, eine Pose aus der Galerie oder eine vorbereitete Foto-Session.</p>
+      </div>
+      <div class="card">
+        <span class="num">02</span>
+        <h3>Hinweise</h3>
+        <p>Eine Stimme und Markierungen auf dem Bildschirm zeigen dir, wohin du gehen, wie du das Handy halten und um welche Pose du das Model bitten sollst.</p>
+      </div>
+      <div class="card">
+        <span class="num">03</span>
+        <h3>Foto</h3>
+        <p>Sobald der Blickwinkel passt, löst die Kamera selbst aus. Bis zu 12 Fotos pro Session landen in deiner Galerie.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="modes" class="section section--alt">
+  <div class="wrap">
+    <div class="say">
+      <h2>Wähle, was du fotografierst</h2>
+      <p>Drei Modi: vom schnellen Foto bis zur Session nach Drehbuch.</p>
+    </div>
+    <div class="cards">
+      <div class="card card--big card--accent">
+        <span class="tag">Fang hier an</span>
+        <h3>Taschenfotograf</h3>
+        <p>Porträt, ab der Taille, Ganzkörper oder sitzend. Die Kamera führt dich von Blickwinkel zu Blickwinkel und macht bis zu 12 Fotos, mit oder ohne Pose.</p>
+      </div>
+      <div class="card card--big">
+        <span class="tag tag--spacer" aria-hidden="true" style="visibility: hidden">&nbsp;</span>
+        <h3>Einzelfoto</h3>
+        <p>Wähle ein Bild aus der Posen-Galerie, und die Kamera hilft dir, Blickwinkel und Pose zu wiederholen.</p>
+      </div>
+      <div class="card card--big">
+        <span class="tag tag--spacer" aria-hidden="true" style="visibility: hidden">&nbsp;</span>
+        <h3>Foto-Sessions</h3>
+        <p>Vorbereitete Shootings mit 3 bis 12 Posen. Die Kamera nimmt jede auf, sobald die Pose zur Vorlage passt.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="privacy" class="section">
+  <div class="wrap split">
+    <div>
+      <h2 class="h2">Deine Fotos bleiben bei&nbsp;dir</h2>
+      <p>Die Erkennung läuft direkt auf dem Handy. Fotos und das Kamerabild werden nirgendwohin gesendet, und du brauchst kein Konto.</p>
+    </div>
+    <ul class="checks">
+      <li>Ohne Anmeldung und Konto</li>
+      <li>Erkennung auf dem Handy</li>
+      <li>Fotos landen nur in deiner Galerie</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" style="padding-top: 0">
+  <div class="wrap">
+    <div class="cta">
+      <div class="cta-main">
+        <span class="eyebrow">„Foto wird aufgenommen – stillhalten“</span>
+        <h2>Du bist dran</h2>
+        <div class="btns">
+          <a class="btn btn--light" href="https://play.google.com/store/apps/details?id=cam.preciosa.smartcamera&amp;referrer=utm_source%3Dsite%26utm_medium%3Dfooter_cta_de">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 3.5v17l14-8.5z"/></svg>Jetzt bei Google Play</a>
+          <span class="btn btn--soon" title="Die iPhone-Version ist in Arbeit"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Bald für iOS</span>
+        </div>
+      </div>
+      <div class="pro" id="pro">
+        <span class="pro-badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>PRO</span>
+        <strong>Früher Zugang zu Pro</strong>
+        <p>Paar-Shootings, Fotos in Bewegung, unbegrenzt eigene Vorlagen hochladen. Erfahre zuerst, wann Pro startet.</p>
+        <!-- data-endpoint: the same URL as WaitlistService._url in the app (the table the
+             emails are added to); while it says YOUR_FORM_ENDPOINT the button opens an email to us -->
+        <form class="waitlist" data-waitlist data-endpoint="https://script.google.com/macros/s/AKfycbw7DmxwmfvefpitIN3C_YavShH7Y-lVaSd8Nw97wLIQMAX7PfyRNiKalxIxFxXPfqua/exec" data-text="{&quot;notify&quot;: &quot;Benachrichtigen&quot;, &quot;done&quot;: &quot;✓  Fertig&quot;, &quot;sending&quot;: &quot;…&quot;, &quot;thanks&quot;: &quot;Danke! Wir schreiben dir, wenn Pro startet.&quot;, &quot;invalid&quot;: &quot;Gib eine gültige E-Mail-Adresse ein&quot;, &quot;failed&quot;: &quot;Senden fehlgeschlagen. Versuch es später noch einmal.&quot;, &quot;subject&quot;: &quot;Preciosa Pro early access&quot;}" novalidate>
+          <label class="visually-hidden" for="pro-email">E-Mail</label>
+          <input id="pro-email" type="email" name="email" autocomplete="email" placeholder="deine@email.de" required>
+          <button type="submit">Benachrichtigen</button>
+        </form>
+        <p class="note" data-waitlist-note aria-live="polite"></p>
+        <p class="note">Wir nutzen deine E-Mail nur, um dich über Pro zu informieren. <a href="/privacy/">Datenschutzerklärung</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<a class="sticky-get" data-sticky-get aria-label="Jetzt bei Google Play" href="https://play.google.com/store/apps/details?id=cam.preciosa.smartcamera&amp;referrer=utm_source%3Dsite%26utm_medium%3Dsticky_de" tabindex="-1" aria-hidden="true">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 3.5v17l14-8.5z"/></svg>Google Play</a>
+
+<footer class="wrap footer">
+  <span>© 2026 Preciosa</span>
+  <nav aria-label="Fußzeile">
+    <a href="/privacy/">Datenschutzerklärung</a>
+    <a href="mailto:preciosai.app@gmail.com">preciosai.app@gmail.com</a>
+  </nav>
+</footer>
+
+<script type="application/json" id="site-text">
+{
+  "quotes": "de",
+  "heroLoop": [
+    {
+      "say": "Neige das Handy etwas nach unten",
+      "tilt": 6
+    },
+    {
+      "say": "Geh einen Schritt zurück",
+      "tilt": 3
+    },
+    {
+      "say": "Bitte das Model: Hand an die Hüfte",
+      "tilt": 1
+    },
+    {
+      "say": "Halte das Handy etwas tiefer",
+      "tilt": 1
+    },
+    {
+      "say": "Super, so halten",
+      "tilt": 0
+    },
+    {
+      "say": "Foto wird aufgenommen – stillhalten",
+      "tilt": 0
+    },
+    {
+      "say": "Fertig, ihr dürft euch bewegen",
+      "tilt": 0
+    }
+  ],
+  "steps": [
+    {
+      "say": "Neige das Handy etwas nach unten",
+      "answer": "tilt"
+    },
+    {
+      "say": "Geh einen Schritt zurück",
+      "answer": "back"
+    },
+    {
+      "say": "Bitte das Model: Hand an die Hüfte",
+      "answer": "pose"
+    },
+    {
+      "say": "Halte das Handy etwas tiefer",
+      "answer": "down"
+    }
+  ],
+  "capturing": "Foto wird aufgenommen – stillhalten",
+  "wrong": "Nicht diese: Hör auf den Hinweis auf dem Bildschirm"
+}
+</script>
+<script src="/assets/site.js?v=202611272230" defer></script>
+<script src="/assets/pro.js?v=202611272230" defer></script>
+<script src="/assets/neural.js?v=202611272230" defer></script>
+</body>
+</html>

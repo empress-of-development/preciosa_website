@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preciosa: um fotógrafo no seu bolso</title>
+<meta name="description" content="Preciosa mostra onde ficar e como segurar o celular, ajusta o zoom, nivela o horizonte e tira a foto sozinha. Suas fotos nunca saem do celular.">
+<link rel="canonical" href="https://preciosa.cam/pt/">
+<link rel="alternate" hreflang="en" href="https://preciosa.cam/">
+<link rel="alternate" hreflang="ru" href="https://preciosa.cam/ru/">
+<link rel="alternate" hreflang="es" href="https://preciosa.cam/es/">
+<link rel="alternate" hreflang="de" href="https://preciosa.cam/de/">
+<link rel="alternate" hreflang="pt" href="https://preciosa.cam/pt/">
+<link rel="alternate" hreflang="x-default" href="https://preciosa.cam/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Preciosa: um fotógrafo no seu bolso">
+<meta property="og:description" content="Dicas, zoom automático e horizonte nivelado: a câmera guia você de ângulo em ângulo e tira a foto sozinha. Grátis para Android.">
+<meta property="og:url" content="https://preciosa.cam/pt/">
+<meta property="og:image" content="https://preciosa.cam/assets/icon-512.png">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0b0919">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Tenor+Sans&display=swap">
+<link rel="stylesheet" href="/assets/style.css?v=202611272230">
+</head>
+<body>
+<div class="bg" aria-hidden="true">
+  <div class="bg-circle bg-circle--1"></div>
+  <div class="bg-circle bg-circle--2"></div>
+  <div class="bg-circle bg-circle--3"></div>
+  <canvas></canvas>
+</div>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+
+<header class="header">
+  <div class="wrap bar">
+    <a class="brand" href="/pt/"><img src="/assets/logo-light.png" alt="" width="54" height="54">Preciosa</a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#try">Experimente</a>
+      <a href="#how">Como funciona</a>
+      <a href="#modes">Modos</a>
+      <a href="#privacy">Privacidade</a>
+    </nav>
+    <div class="bar-end">
+      <details class="lang-menu"><summary aria-label="Idioma">PT<svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5L5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary><ul><li><a href="/" hreflang="en" lang="en">English</a></li><li><a href="/ru/" hreflang="ru" lang="ru">Русский</a></li><li><a href="/es/" hreflang="es" lang="es">Español</a></li><li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/pt/" hreflang="pt" lang="pt" aria-current="page">Português</a></li></ul></details>
+      <a class="pro-badge" href="#pro" aria-label="Pro: acesso antecipado"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>PRO</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="wrap">
+    <div class="viewfinder">
+      <div class="grid3" aria-hidden="true"></div>
+      <div class="corner corner--tl" aria-hidden="true"></div>
+      <div class="corner corner--tr" aria-hidden="true"></div>
+      <div class="corner corner--bl" aria-hidden="true"></div>
+      <div class="corner corner--br" aria-hidden="true"></div>
+
+      <div class="vf-top" aria-hidden="true"><span class="pill pill--accent">AUTO</span><span class="pill">01 / 12</span></div>
+
+      <div class="vf-body">
+        <div class="hero-text">
+          <span class="badge">Grátis para Android · <span class="nocaps">iOS</span> em breve</span>
+          <h1 style="--fit: 13.5">Um&nbsp;fotógrafo<br>no&nbsp;seu&nbsp;bolso</h1>
+          <p class="lead">A câmera mostra onde ficar e como segurar o celular, ajusta o zoom sozinha e nivela o horizonte. Quando o enquadramento fica certo, ela tira a foto por conta própria.</p>
+          <div class="btns">
+            <a class="btn btn--light" href="https://play.google.com/store/apps/details?id=cam.preciosa.smartcamera&amp;referrer=utm_source%3Dsite%26utm_medium%3Dhero_pt">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 3.5v17l14-8.5z"/></svg>Disponível no Google Play</a>
+            <span class="btn btn--soon" title="A versão para iPhone está em desenvolvimento"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Em breve no iOS</span>
+            <a class="btn btn--ghost" href="#try">Experimente aqui</a>
+          </div>
+          <ul class="facts">
+            <li>As fotos não saem do celular</li>
+            <li>Sem cadastro</li>
+            <li>5 idiomas</li>
+          </ul>
+        </div>
+
+        <div class="phone-col">
+          <!-- To show a screen recording instead: put assets/demo.mp4 and replace the
+               phone's content with
+               <video src="/assets/demo.mp4" autoplay muted loop playsinline></video> -->
+          <div class="phone" id="hero-phone" role="img" aria-label="A tela da câmera Preciosa com uma dica de enquadramento">
+            <div class="screen-bg"></div>
+            <div class="screen-grid"></div>
+            <div class="person"><img src="/assets/model-after.webp" alt="" width="138" height="340" data-model></div>
+            <div class="frame is-ok"></div>
+            <div class="screen-top"><span>2 / 12</span><span>AUTO</span></div>
+            <div class="capsule"><i></i></div>
+            <div class="screen-hint"><span data-hint>Ótimo, segure assim</span></div>
+            <div class="flash"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vf-bottom">
+        <div class="voice">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9b8eff" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M11 5L6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 010 7"/><path d="M19 5a10 10 0 010 14"/></svg>
+          <span data-voice aria-live="off">“Dê um passo para trás”</span>
+        </div>
+        <div class="level" aria-hidden="true">
+          <div class="level-track"><div class="level-dot" data-level-dot></div></div>
+          <span data-level-val>0.0°</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="try" class="section section--alt">
+  <div class="wrap try">
+    <div class="try-text">
+      <span class="eyebrow">Experimente aqui</span>
+      <h2 class="h2">Você segura o celular.<br>A câmera dirige.</h2>
+      <p>Leia a dica na tela do celular e toque no botão destacado. Siga quatro dicas e a foto é tirada sozinha. O app funciona do mesmo jeito, só que com a câmera de verdade e uma voz.</p>
+    </div>
+    <div class="phone-col">
+      <div class="phone" id="try-phone">
+        <div class="screen-bg"></div>
+        <div class="screen-grid"></div>
+        <div class="person" aria-hidden="true"><img src="/assets/model-before.webp" alt="" width="81" height="340" data-model></div>
+        <div class="frame" aria-hidden="true"></div>
+        <div class="screen-top"><span data-counter>1 / 4</span><span>AUTO</span></div>
+        <div class="capsule" aria-hidden="true"><i></i></div>
+        <div class="screen-hint"><span data-hint aria-live="polite">Incline o telefone um pouco para baixo</span></div>
+        <div class="flash" aria-hidden="true"></div>
+        <div class="shot" hidden>
+          <strong>Foto tirada!</strong>
+          <span>“Pronto, já pode se mexer”</span>
+          <button type="button">De novo</button>
+        </div>
+      </div>
+    </div>
+    <div class="controls">
+      <span id="try-q">Toque no que a câmera pede:</span>
+      <div class="row" role="group" aria-labelledby="try-q">
+        <button type="button" data-answer="tilt">Inclinar o celular</button>
+        <button type="button" data-answer="back">Passo para trás</button>
+        <button type="button" data-answer="pose">Pedir a pose</button>
+        <button type="button" data-answer="down">Abaixar o celular</button>
+      </div>
+      <span class="wrong" data-wrong aria-live="polite"></span>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="section">
+  <div class="wrap">
+    <div class="say">
+      <h2>A câmera diz o que fazer</h2>
+      <p>Você só segura o celular e segue as dicas.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <span class="num">01</span>
+        <h3>Modo</h3>
+        <p>Escolha o fotógrafo de bolso, uma pose da galeria ou uma sessão de fotos pronta.</p>
+      </div>
+      <div class="card">
+        <span class="num">02</span>
+        <h3>Dicas</h3>
+        <p>Uma voz e marcas na tela mostram para onde ir, como segurar o celular e qual pose pedir à modelo.</p>
+      </div>
+      <div class="card">
+        <span class="num">03</span>
+        <h3>Foto</h3>
+        <p>Quando o ângulo coincide, a câmera dispara sozinha. Até 12 fotos por sessão vão para a sua galeria.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="modes" class="section section--alt">
+  <div class="wrap">
+    <div class="say">
+      <h2>Escolha o que fotografar</h2>
+      <p>Três modos: de uma foto rápida a uma sessão com roteiro.</p>
+    </div>
+    <div class="cards">
+      <div class="card card--big card--accent">
+        <span class="tag">Comece aqui</span>
+        <h3>Fotógrafo de bolso</h3>
+        <p>Retrato, da cintura para cima, corpo inteiro ou sentada. A câmera leva você de ângulo em ângulo e tira até 12 fotos, com pose ou sem.</p>
+      </div>
+      <div class="card card--big">
+        <span class="tag tag--spacer" aria-hidden="true" style="visibility: hidden">&nbsp;</span>
+        <h3>Uma foto</h3>
+        <p>Escolha uma imagem da galeria de poses, e a câmera ajuda a repetir o ângulo e a pose.</p>
+      </div>
+      <div class="card card--big">
+        <span class="tag tag--spacer" aria-hidden="true" style="visibility: hidden">&nbsp;</span>
+        <h3>Sessões de fotos</h3>
+        <p>Sessões prontas de 3 a 12 poses. A câmera fotografa cada uma assim que a pose coincide com a referência.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="privacy" class="section">
+  <div class="wrap split">
+    <div>
+      <h2 class="h2">Suas fotos ficam com&nbsp;você</h2>
+      <p>O reconhecimento funciona no próprio celular. As fotos e a imagem da câmera nunca são enviadas a lugar nenhum, e você não precisa de conta.</p>
+    </div>
+    <ul class="checks">
+      <li>Sem cadastro nem conta</li>
+      <li>Reconhecimento no celular</li>
+      <li>As fotos ficam só na sua galeria</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" style="padding-top: 0">
+  <div class="wrap">
+    <div class="cta">
+      <div class="cta-main">
+        <span class="eyebrow">“Tirando a foto — sem se mexer”</span>
+        <h2>Sua vez de fotografar</h2>
+        <div class="btns">
+          <a class="btn btn--light" href="https://play.google.com/store/apps/details?id=cam.preciosa.smartcamera&amp;referrer=utm_source%3Dsite%26utm_medium%3Dfooter_cta_pt">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 3.5v17l14-8.5z"/></svg>Disponível no Google Play</a>
+          <span class="btn btn--soon" title="A versão para iPhone está em desenvolvimento"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Em breve no iOS</span>
+        </div>
+      </div>
+      <div class="pro" id="pro">
+        <span class="pro-badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>PRO</span>
+        <strong>Acesso antecipado ao Pro</strong>
+        <p>Ensaios de casal, fotos em movimento, envio ilimitado das suas próprias referências. Saiba primeiro quando o Pro for lançado.</p>
+        <!-- data-endpoint: the same URL as WaitlistService._url in the app (the table the
+             emails are added to); while it says YOUR_FORM_ENDPOINT the button opens an email to us -->
+        <form class="waitlist" data-waitlist data-endpoint="https://script.google.com/macros/s/AKfycbw7DmxwmfvefpitIN3C_YavShH7Y-lVaSd8Nw97wLIQMAX7PfyRNiKalxIxFxXPfqua/exec" data-text="{&quot;notify&quot;: &quot;Avise-me&quot;, &quot;done&quot;: &quot;✓  Pronto&quot;, &quot;sending&quot;: &quot;…&quot;, &quot;thanks&quot;: &quot;Obrigado! Vamos escrever quando o Pro for lançado.&quot;, &quot;invalid&quot;: &quot;Digite um e-mail válido&quot;, &quot;failed&quot;: &quot;Não foi possível enviar. Tente mais tarde.&quot;, &quot;subject&quot;: &quot;Preciosa Pro early access&quot;}" novalidate>
+          <label class="visually-hidden" for="pro-email">E-mail</label>
+          <input id="pro-email" type="email" name="email" autocomplete="email" placeholder="seu@email.com" required>
+          <button type="submit">Avise-me</button>
+        </form>
+        <p class="note" data-waitlist-note aria-live="polite"></p>
+        <p class="note">Usamos seu e-mail só para avisar sobre o Pro. <a href="/privacy/">Política de privacidade</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<a class="sticky-get" data-sticky-get aria-label="Disponível no Google Play" href="https://play.google.com/store/apps/details?id=cam.preciosa.smartcamera&amp;referrer=utm_source%3Dsite%26utm_medium%3Dsticky_pt" tabindex="-1" aria-hidden="true">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 3.5v17l14-8.5z"/></svg>Google Play</a>
+
+<footer class="wrap footer">
+  <span>© 2026 Preciosa</span>
+  <nav aria-label="Rodapé">
+    <a href="/privacy/">Política de privacidade</a>
+    <a href="mailto:preciosai.app@gmail.com">preciosai.app@gmail.com</a>
+  </nav>
+</footer>
+
+<script type="application/json" id="site-text">
+{
+  "quotes": "pt",
+  "heroLoop": [
+    {
+      "say": "Incline o telefone um pouco para baixo",
+      "tilt": 6
+    },
+    {
+      "say": "Dê um passo para trás",
+      "tilt": 3
+    },
+    {
+      "say": "Peça à modelo: mão na cintura",
+      "tilt": 1
+    },
+    {
+      "say": "Abaixe um pouco o celular",
+      "tilt": 1
+    },
+    {
+      "say": "Ótimo, segure assim",
+      "tilt": 0
+    },
+    {
+      "say": "Tirando a foto — sem se mexer",
+      "tilt": 0
+    },
+    {
+      "say": "Pronto, já pode se mexer",
+      "tilt": 0
+    }
+  ],
+  "steps": [
+    {
+      "say": "Incline o telefone um pouco para baixo",
+      "answer": "tilt"
+    },
+    {
+      "say": "Dê um passo para trás",
+      "answer": "back"
+    },
+    {
+      "say": "Peça à modelo: mão na cintura",
+      "answer": "pose"
+    },
+    {
+      "say": "Abaixe um pouco o celular",
+      "answer": "down"
+    }
+  ],
+  "capturing": "Tirando a foto — sem se mexer",
+  "wrong": "Esse não: ouça a dica na tela"
+}
+</script>
+<script src="/assets/site.js?v=202611272230" defer></script>
+<script src="/assets/pro.js?v=202611272230" defer></script>
+<script src="/assets/neural.js?v=202611272230" defer></script>
+</body>
+</html>
