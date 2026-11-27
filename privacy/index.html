@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Preciosa</title>
+<meta name="description" content="Privacy Policy for Preciosa: Smart Camera. Photos and the camera feed are processed on the device and never uploaded.">
+<link rel="canonical" href="https://preciosa.cam/privacy/">
+<meta name="theme-color" content="#0b0919">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap">
+<link rel="stylesheet" href="/assets/style.css?v=20261127">
+</head>
+<body>
+<div class="bg" aria-hidden="true">
+  <div class="bg-circle bg-circle--1"></div>
+  <div class="bg-circle bg-circle--2"></div>
+  <div class="bg-circle bg-circle--3"></div>
+  <canvas></canvas>
+</div>
+<header class="wrap header">
+  <a class="brand" href="/"><img src="/assets/icon-192.png" alt="" width="36" height="36">Preciosa</a>
+  <nav class="nav" aria-label="Main">
+    <a href="/">Home</a>
+    <a class="lang" href="/ru/" hreflang="ru" lang="ru">RU</a>
+  </nav>
+</header>
+<main class="legal">
+<h1>Privacy Policy for Preciosa: Smart Camera</h1>
+<p class="meta"><strong>Last updated: April 17, 2026</strong></p>
+<p class="meta"><strong>App version: 1.0.0</strong></p>
+<p>Preciosa ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use the Preciosa: Smart Camera mobile application ("Application").</p>
+<h2>1. Information Collection and Use</h2>
+<p>Our Application is designed with privacy in mind. <strong>We do not collect, store, or transmit any personal data (such as photos, images, or personal information) to our servers.</strong></p>
+<h3>1.1 Camera Access</h3>
+<p>The Application requires access to your device's camera to perform real-time object detection and pose recognition.</p>
+<ul>
+<li><strong>On-Device Processing</strong>: All image analysis is performed locally on your device using Google's MediaPipe machine learning framework.</li>
+<li><strong>No Cloud Uploads</strong>: Live camera frames used for AI analysis are processed in volatile memory and are never uploaded to our servers or any third-party cloud services. Your photos and camera feed never leave your device.</li>
+</ul>
+<h3>1.2 Media and Gallery Access</h3>
+<p>The Application requires access to your device's storage and photo gallery to:</p>
+<ul>
+<li>Save photos captured during your sessions.</li>
+<li>Allow you to select reference images.</li>
+<li>Manage your captured media within the integrated gallery.</li>
+</ul>
+<p>All media remains on your device.</p>
+<h3>1.3 Local Storage</h3>
+<p>We use local storage (via Shared Preferences) to store your app settings, such as similarity thresholds and capture configurations. This data never leaves your device.</p>
+<h2>2. Device Permissions</h2>
+<p>To provide its core features, the Application explicitly requests the following permissions:</p>
+<ul>
+<li><strong>CAMERA</strong>: To capture images for real-time AI processing.</li>
+<li><strong>READ_EXTERNAL_STORAGE</strong>: To access and select images from your gallery on Android 12 and below. On Android 13 and above, the app uses the system photo picker, which does not require this permission.</li>
+<li><strong>WRITE_EXTERNAL_STORAGE</strong>: To save processed photos to your device on Android 9 and below. On Android 10 and above, no storage permission is required to save photos.</li>
+<li><strong>INTERNET / ACCESS_NETWORK_STATE</strong>: Used to load custom fonts (Google Fonts) for the app's interface and to support the MediaPipe SDK's automatic updates and diagnostics (see Section 3.1 below).</li>
+</ul>
+<p>We do not request access to your location, contacts, microphone, or any other sensitive device data.</p>
+<h2>3. Data Sharing and Third-Party Services</h2>
+<ul>
+<li><strong>No Personal Data Sharing</strong>: We do not sell, trade, or share any personal user data with third parties. Your photos, camera feed, and personal information are never transmitted.</li>
+</ul>
+<h3>3.1 Google MediaPipe SDK</h3>
+<p>The Application uses Google's MediaPipe SDK for on-device pose recognition. While all image processing happens locally on your device, the MediaPipe Android SDK may automatically send limited technical data to Google for diagnostics and performance monitoring purposes. This data may include:</p>
+<ul>
+<li><strong>Device information</strong>: device manufacturer, model, OS version, and available hardware accelerators (GPU, DSP).</li>
+<li><strong>App identification</strong>: package name and app version.</li>
+<li><strong>API configuration</strong>: image format, resolution, and MediaPipe version used.</li>
+<li><strong>Performance metrics</strong>: event types (such as initialize, run, detection), error codes, and processing performance data.</li>
+<li><strong>Per-installation identifiers</strong>: these do not uniquely identify a user or physical device.</li>
+</ul>
+<p><strong>This technical data does not include any photos, images, camera frames, or personally identifiable information.</strong> It is used solely by Google to maintain, improve, and debug the MediaPipe SDK. For more information, see the <a href="https://ai.google.dev/edge/mediapipe/legal/tos">MediaPipe Terms of Service</a> and <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+<h3>3.2 Other Connectivity</h3>
+<ul>
+<li><strong>Google Fonts</strong>: The Application loads custom fonts over the internet for the user interface. No user data is transmitted during this process.</li>
+<li><strong>No Additional Trackers</strong>: The Application does not use any additional third-party analytics (like Google Analytics or Firebase), advertising networks, or tracking SDKs beyond what is described above.</li>
+</ul>
+<h2>4. Data Deletion and Retention</h2>
+<p>Since Application does not collect or store any personal user data on external servers, there is no personal data for us to delete.</p>
+<ul>
+<li><strong>User Control</strong>: You have full control over your data. All images and settings are stored locally. You can delete saved media through the app's gallery or your device's file manager.</li>
+<li><strong>App Uninstallation</strong>: If you uninstall the Application, all locally stored app settings and temporary data will be automatically removed by the operating system.</li>
+</ul>
+<h2>5. Security</h2>
+<p>We value your trust in providing us access to your camera and media. Since all personal data is processed locally, your photos and analysis results remain under your physical control. We recommend using standard device security (like passcodes or biometrics) to protect your saved media.</p>
+<h2>6. Children's Privacy</h2>
+<p>The Application is not intended for children under 13 years of age. Since we do not collect any personally identifiable information (PII) from any user, we do not knowingly collect data from children.</p>
+<h2>7. Changes to This Privacy Policy</h2>
+<p>We may update this Privacy Policy from time to time to reflect changes in our practices or for legal reasons. Any changes are effective immediately upon posting. We will notify users of significant updates through an in-app notification when feasible.</p>
+<h2>8. Contact Us</h2>
+<p>If you have any questions or concerns regarding this Privacy Policy or our data practices, do not hesitate to contact us at:</p>
+<ul>
+<li><strong>Email</strong>: preciosai.app@gmail.com</li>
+</ul>
+<h2>9. This Website</h2>
+<p>This website is a static page about the Application. It does not use cookies, analytics or advertising trackers. The only personal data it asks for is optional: your email address in the Pro early access form. Fonts are loaded from Google Fonts, so your browser connects to Google's servers to download them (see <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>). If you email us, we use your address only to reply.</p>
+<h2>10. Pro Early Access List</h2>
+<p>If you enter your email address in the Pro early access form (on this website or in the Application), we use it only to tell you when Preciosa Pro launches. The address is stored by the form service we use to receive it (Google Sheets, via a Google Apps Script web app) and is never sold or shared for marketing. To be removed from the list, email us at <a href="mailto:preciosai.app@gmail.com">preciosai.app@gmail.com</a> and we will delete your address.</p>
+</main>
+<footer class="wrap footer">
+  <span>© 2026 Preciosa</span>
+  <nav aria-label="Footer">
+    <a href="/">Home</a>
+    <a href="mailto:preciosai.app@gmail.com">preciosai.app@gmail.com</a>
+  </nav>
+</footer>
+<script src="/assets/neural.js?v=20261127" defer></script>
+</body>
+</html>

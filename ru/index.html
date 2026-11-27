@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preciosa: фотограф в кармане</title>
+<meta name="description" content="Preciosa подскажет, куда встать и как наклонить телефон, и сама сделает снимок, когда кадр сложится. Всё работает на телефоне: фото никуда не отправляются.">
+<link rel="canonical" href="https://preciosa.cam/ru/">
+<link rel="alternate" hreflang="en" href="https://preciosa.cam/">
+<link rel="alternate" hreflang="ru" href="https://preciosa.cam/ru/">
+<link rel="alternate" hreflang="x-default" href="https://preciosa.cam/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Preciosa: фотограф в кармане">
+<meta property="og:description" content="Камера ведёт от ракурса к ракурсу и снимает сама. Бесплатно для Android.">
+<meta property="og:url" content="https://preciosa.cam/ru/">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:image" content="https://preciosa.cam/assets/icon-512.png">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0b0919">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@500;700&display=swap">
+<link rel="stylesheet" href="/assets/style.css?v=20261127">
+</head>
+<body>
+<div class="bg" aria-hidden="true">
+  <div class="bg-circle bg-circle--1"></div>
+  <div class="bg-circle bg-circle--2"></div>
+  <div class="bg-circle bg-circle--3"></div>
+  <canvas></canvas>
+</div>
+<a class="skip" href="#main">К содержимому</a>
+
+<header class="wrap header">
+  <a class="brand" href="/ru/"><img src="/assets/icon-192.png" alt="" width="36" height="36">Preciosa</a>
+  <nav class="nav" aria-label="Основное меню">
+    <a href="#try">Попробовать</a>
+    <a href="#how">Как это работает</a>
+    <a href="#modes">Режимы</a>
+    <a href="#privacy">Приватность</a>
+    <a class="lang" href="/" hreflang="en" lang="en">EN</a>
+    <a class="pro-badge" href="#pro" aria-label="Pro: ранний доступ"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>PRO</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="wrap">
+    <div class="viewfinder">
+      <div class="grid3" aria-hidden="true"></div>
+      <div class="corner corner--tl" aria-hidden="true"></div>
+      <div class="corner corner--tr" aria-hidden="true"></div>
+      <div class="corner corner--bl" aria-hidden="true"></div>
+      <div class="corner corner--br" aria-hidden="true"></div>
+
+      <div class="vf-top" aria-hidden="true"><span class="pill pill--accent">AUTO</span><span class="pill">01 / 12</span></div>
+
+      <div class="vf-body">
+        <div class="hero-text">
+          <span class="badge">Бесплатно для Android · <span class="nocaps">iOS</span> скоро</span>
+          <h1>Фотограф<br>в кармане</h1>
+          <p class="lead">Камера подскажет, куда встать и как наклонить телефон, и сама сделает снимок, когда кадр сложится. Даже если снимает тот, кто «не умеет фоткать».</p>
+          <div class="btns">
+            <a class="btn btn--light" href="https://play.google.com/store/apps/details?id=cam.preciosa.smartcamera&amp;referrer=utm_source%3Dsite%26utm_medium%3Dhero_ru">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 3.5v17l14-8.5z"/></svg>Скачать в Google Play</a>
+            <span class="btn btn--soon" title="Версия для iPhone в разработке"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Скоро на iOS</span>
+            <a class="btn btn--ghost" href="#try">Попробовать прямо здесь</a>
+          </div>
+          <ul class="facts">
+            <li>Фото не покидают телефон</li>
+            <li>Без регистрации</li>
+            <li>5 языков</li>
+          </ul>
+        </div>
+
+        <div class="phone-col">
+          <!-- To show a screen recording instead: put assets/demo.mp4 and replace the
+               phone's content with
+               <video src="/assets/demo.mp4" autoplay muted loop playsinline></video> -->
+          <div class="phone" id="hero-phone" role="img" aria-label="Экран камеры Preciosa с подсказкой по кадру">
+            <div class="screen-bg"></div>
+            <div class="screen-grid"></div>
+            <div class="person"><img src="/assets/model-after.webp" alt="" width="138" height="340" data-model></div>
+            <div class="frame is-ok"></div>
+            <div class="screen-top"><span>2 / 12</span><span>AUTO</span></div>
+            <div class="capsule"><i></i></div>
+            <div class="screen-hint"><span data-hint>Отлично, держите так</span></div>
+            <div class="flash"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vf-bottom">
+        <div class="voice">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9b8eff" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M11 5L6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 010 7"/><path d="M19 5a10 10 0 010 14"/></svg>
+          <span data-voice aria-live="off">«Отойдите на шаг назад»</span>
+        </div>
+        <div class="level" aria-hidden="true">
+          <div class="level-track"><div class="level-dot" data-level-dot></div></div>
+          <span data-level-val>0.0°</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="try" class="section section--alt">
+  <div class="wrap try">
+    <div class="try-text">
+      <span class="eyebrow">Попробуй прямо здесь</span>
+      <h2 class="h2">Ты держишь телефон.<br>Камера ведёт съёмку.</h2>
+      <p>Читай подсказку на экране телефона и нажимай подсвеченную кнопку. Выполни четыре подсказки, и кадр снимется сам. В приложении так же, только с настоящей камерой и голосом.</p>
+    </div>
+    <div class="phone-col">
+      <div class="phone" id="try-phone">
+        <div class="screen-bg"></div>
+        <div class="screen-grid"></div>
+        <div class="person" aria-hidden="true"><img src="/assets/model-before.webp" alt="" width="81" height="340" data-model></div>
+        <div class="frame" aria-hidden="true"></div>
+        <div class="screen-top"><span data-counter>1 / 4</span><span>AUTO</span></div>
+        <div class="capsule" aria-hidden="true"><i></i></div>
+        <div class="screen-hint"><span data-hint aria-live="polite">Наклоните телефон чуть вниз</span></div>
+        <div class="flash" aria-hidden="true"></div>
+        <div class="shot" hidden>
+          <strong>Щёлк!</strong>
+          <span>«Готово, можно двигаться»</span>
+          <button type="button">Ещё раз</button>
+        </div>
+      </div>
+    </div>
+    <div class="controls">
+      <span id="try-q">Нажми то, что просит камера:</span>
+      <div class="row" role="group" aria-labelledby="try-q">
+        <button type="button" data-answer="tilt">Наклонить телефон</button>
+        <button type="button" data-answer="back">Шаг назад</button>
+        <button type="button" data-answer="pose">Попросить позу</button>
+        <button type="button" data-answer="down">Телефон ниже</button>
+      </div>
+      <span class="wrong" data-wrong aria-live="polite"></span>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="section">
+  <div class="wrap">
+    <div class="say">
+      <small>Камера говорит:</small>
+      <h2>«Опустите телефон ниже»</h2>
+      <p>…и ещё десяток подсказок. Три шага до серии кадров:</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <span class="num">01</span>
+        <h3>Выбери режим</h3>
+        <p>Камера-фотограф, одна поза из галереи или готовая фотосессия.</p>
+      </div>
+      <div class="card">
+        <span class="num">02</span>
+        <h3>Следуй подсказкам</h3>
+        <p>Голос и метки на экране подскажут, куда шагнуть, как держать телефон и какую позу попросить у модели.</p>
+      </div>
+      <div class="card">
+        <span class="num">03</span>
+        <h3>Снимок делается сам</h3>
+        <p>Когда ракурс совпал, затвор срабатывает автоматически. За одну сессию в галерее появится до 12 кадров.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="modes" class="section section--alt">
+  <div class="wrap">
+    <div class="say">
+      <small>Камера говорит:</small>
+      <h2>«Попросите модель<br>сменить позу»</h2>
+      <p>Три режима: от «просто нажми» до готовой фотосессии.</p>
+    </div>
+    <div class="cards">
+      <div class="card card--big card--accent">
+        <span class="tag">Начни отсюда</span>
+        <h3>Камера-фотограф</h3>
+        <p>Выбери, что снимать: портрет, по пояс, в полный рост, сидя. Камера сама поведёт от ракурса к ракурсу и снимет до 12 кадров: только ракурс или ракурс с позой.</p>
+      </div>
+      <div class="card card--big">
+        <span class="tag tag--spacer" aria-hidden="true" style="visibility: hidden">&nbsp;</span>
+        <h3>Одна поза</h3>
+        <p>Выбери картинку из галереи поз, и камера поможет повторить и ракурс, и позу.</p>
+      </div>
+      <div class="card card--big">
+        <span class="tag tag--spacer" aria-hidden="true" style="visibility: hidden">&nbsp;</span>
+        <h3>Фотосессии</h3>
+        <p>Готовые сценарии съёмки от 3 до 12 поз по порядку. Камера снимает, как только поза совпала с образцом.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="privacy" class="section">
+  <div class="wrap split">
+    <div>
+      <h2 class="h2">Чего камера никогда не скажет: <em>«Загружаю в облако…»</em></h2>
+      <p>Всё распознавание работает прямо на телефоне. Фото и изображение с камеры никуда не отправляются. Ни аккаунта, ни регистрации.</p>
+    </div>
+    <ul class="checks">
+      <li>Без регистрации и аккаунта</li>
+      <li>Распознавание работает на телефоне</li>
+      <li>Фото сохраняются только в твою галерею</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" style="padding-top: 0">
+  <div class="wrap">
+    <div class="cta">
+      <div class="cta-main">
+        <span class="eyebrow">«Снимаю — не двигайтесь»</span>
+        <h2>Твоя очередь снимать</h2>
+        <div class="btns">
+          <a class="btn btn--light" href="https://play.google.com/store/apps/details?id=cam.preciosa.smartcamera&amp;referrer=utm_source%3Dsite%26utm_medium%3Dfooter_cta_ru">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 3.5v17l14-8.5z"/></svg>Скачать в Google Play</a>
+          <span class="btn btn--soon" title="Версия для iPhone в разработке"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Скоро на iOS</span>
+        </div>
+      </div>
+      <div class="pro" id="pro">
+        <span class="pro-badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>PRO</span>
+        <strong>Получить ранний доступ к Pro</strong>
+        <p>Фотосессии для пар, съёмка в движении, свои референсы без ограничений. Узнайте первым о запуске Pro.</p>
+        <!-- data-endpoint: the same URL as WaitlistService._url in the app (the table the
+             emails are added to); while it says YOUR_FORM_ENDPOINT the button opens an email to us -->
+        <form class="waitlist" data-waitlist data-endpoint="https://script.google.com/macros/s/AKfycbw7DmxwmfvefpitIN3C_YavShH7Y-lVaSd8Nw97wLIQMAX7PfyRNiKalxIxFxXPfqua/exec" data-text="{&quot;notify&quot;: &quot;Уведомить меня&quot;, &quot;done&quot;: &quot;✓  Готово&quot;, &quot;sending&quot;: &quot;…&quot;, &quot;thanks&quot;: &quot;Спасибо! Напишем, когда Pro выйдет.&quot;, &quot;invalid&quot;: &quot;Введите корректный email&quot;, &quot;failed&quot;: &quot;Не получилось отправить. Попробуйте позже.&quot;, &quot;subject&quot;: &quot;Preciosa Pro: ранний доступ&quot;}" novalidate>
+          <label class="visually-hidden" for="pro-email">Email</label>
+          <input id="pro-email" type="email" name="email" autocomplete="email" placeholder="ваш@email.com" required>
+          <button type="submit">Уведомить меня</button>
+        </form>
+        <p class="note" data-waitlist-note aria-live="polite"></p>
+        <p class="note">Email используем только чтобы сообщить о Pro. <a href="/privacy/">Политика конфиденциальности</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="wrap footer">
+  <span>© 2026 Preciosa</span>
+  <nav aria-label="Ссылки">
+    <a href="/privacy/">Политика конфиденциальности</a>
+    <a href="mailto:preciosai.app@gmail.com">preciosai.app@gmail.com</a>
+  </nav>
+</footer>
+
+<script type="application/json" id="site-text">
+{
+  "quotes": "ru",
+  "heroLoop": [
+    {
+      "say": "Наклоните телефон чуть вниз",
+      "tilt": 6
+    },
+    {
+      "say": "Отойдите на шаг назад",
+      "tilt": 3
+    },
+    {
+      "say": "Попросите модель: рука на талии",
+      "tilt": 1
+    },
+    {
+      "say": "Опустите телефон ниже",
+      "tilt": 1
+    },
+    {
+      "say": "Отлично, держите так",
+      "tilt": 0
+    },
+    {
+      "say": "Снимаю — не двигайтесь",
+      "tilt": 0
+    },
+    {
+      "say": "Готово, можно двигаться",
+      "tilt": 0
+    }
+  ],
+  "steps": [
+    {
+      "say": "Наклоните телефон чуть вниз",
+      "answer": "tilt"
+    },
+    {
+      "say": "Отойдите на шаг назад",
+      "answer": "back"
+    },
+    {
+      "say": "Попросите модель: рука на талии",
+      "answer": "pose"
+    },
+    {
+      "say": "Опустите телефон ниже",
+      "answer": "down"
+    }
+  ],
+  "capturing": "Снимаю — не двигайтесь",
+  "wrong": "Не то — послушай подсказку на экране"
+}
+</script>
+<script src="/assets/site.js?v=20261127" defer></script>
+<script src="/assets/pro.js?v=20261127" defer></script>
+<script src="/assets/neural.js?v=20261127" defer></script>
+</body>
+</html>
