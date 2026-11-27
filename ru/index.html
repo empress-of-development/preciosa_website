@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Preciosa: фотограф в кармане</title>
-<meta name="description" content="Preciosa подскажет, куда встать и как наклонить телефон, и сама сделает снимок, когда кадр сложится. Всё работает на телефоне: фото никуда не отправляются.">
+<meta name="description" content="Preciosa подскажет, куда встать и как держать телефон, сама подберёт приближение, выровняет горизонт и сделает снимок. Фото никуда не отправляются.">
 <link rel="canonical" href="https://preciosa.cam/ru/">
 <link rel="alternate" hreflang="en" href="https://preciosa.cam/">
 <link rel="alternate" hreflang="ru" href="https://preciosa.cam/ru/">
 <link rel="alternate" hreflang="x-default" href="https://preciosa.cam/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Preciosa: фотограф в кармане">
-<meta property="og:description" content="Камера ведёт от ракурса к ракурсу и снимает сама. Бесплатно для Android.">
+<meta property="og:description" content="Подсказки, автозум и ровный горизонт: камера ведёт от ракурса к ракурсу и снимает сама. Бесплатно для Android.">
 <meta property="og:url" content="https://preciosa.cam/ru/">
 <meta property="og:locale" content="ru_RU">
 <meta property="og:image" content="https://preciosa.cam/assets/icon-512.png">
@@ -21,8 +21,8 @@
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@500;700&display=swap">
-<link rel="stylesheet" href="/assets/style.css?v=20261127">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Tenor+Sans&display=swap">
+<link rel="stylesheet" href="/assets/style.css?v=202611272020">
 </head>
 <body>
 <div class="bg" aria-hidden="true">
@@ -33,16 +33,20 @@
 </div>
 <a class="skip" href="#main">К содержимому</a>
 
-<header class="wrap header">
-  <a class="brand" href="/ru/"><img src="/assets/icon-192.png" alt="" width="36" height="36">Preciosa</a>
-  <nav class="nav" aria-label="Основное меню">
-    <a href="#try">Попробовать</a>
-    <a href="#how">Как это работает</a>
-    <a href="#modes">Режимы</a>
-    <a href="#privacy">Приватность</a>
-    <a class="lang" href="/" hreflang="en" lang="en">EN</a>
-    <a class="pro-badge" href="#pro" aria-label="Pro: ранний доступ"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>PRO</a>
-  </nav>
+<header class="header">
+  <div class="wrap bar">
+    <a class="brand" href="/ru/"><img src="/assets/logo-light.png" alt="" width="54" height="54">Preciosa</a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#try">Попробовать</a>
+      <a href="#how">Как это работает</a>
+      <a href="#modes">Режимы</a>
+      <a href="#privacy">Приватность</a>
+    </nav>
+    <div class="bar-end">
+      <div class="lang-switch"><span class="is-current">RU</span><span class="dot" aria-hidden="true">·</span><a href="/" hreflang="en" lang="en">EN</a></div>
+      <a class="pro-badge" href="#pro" aria-label="Pro: ранний доступ"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>PRO</a>
+    </div>
+  </div>
 </header>
 
 <main id="main">
@@ -62,7 +66,7 @@
         <div class="hero-text">
           <span class="badge">Бесплатно для Android · <span class="nocaps">iOS</span> скоро</span>
           <h1>Фотограф<br>в кармане</h1>
-          <p class="lead">Камера подскажет, куда встать и как наклонить телефон, и сама сделает снимок, когда кадр сложится. Даже если снимает тот, кто «не умеет фоткать».</p>
+          <p class="lead">Камера подскажет, куда встать и как держать телефон, сама подберёт приближение и выровняет горизонт. Когда кадр сложится, снимок сделается автоматически.</p>
           <div class="btns">
             <a class="btn btn--light" href="https://play.google.com/store/apps/details?id=cam.preciosa.smartcamera&amp;referrer=utm_source%3Dsite%26utm_medium%3Dhero_ru">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 3.5v17l14-8.5z"/></svg>Скачать в Google Play</a>
@@ -125,7 +129,7 @@
         <div class="screen-hint"><span data-hint aria-live="polite">Наклоните телефон чуть вниз</span></div>
         <div class="flash" aria-hidden="true"></div>
         <div class="shot" hidden>
-          <strong>Щёлк!</strong>
+          <strong>Снято!</strong>
           <span>«Готово, можно двигаться»</span>
           <button type="button">Ещё раз</button>
         </div>
@@ -147,25 +151,24 @@
 <section id="how" class="section">
   <div class="wrap">
     <div class="say">
-      <small>Камера говорит:</small>
-      <h2>«Опустите телефон ниже»</h2>
-      <p>…и ещё десяток подсказок. Три шага до серии кадров:</p>
+      <h2>Камера подскажет, что делать</h2>
+      <p>Тебе остаётся держать телефон и следовать подсказкам.</p>
     </div>
     <div class="cards">
       <div class="card">
         <span class="num">01</span>
-        <h3>Выбери режим</h3>
-        <p>Камера-фотограф, одна поза из галереи или готовая фотосессия.</p>
+        <h3>Режим</h3>
+        <p>Выбери камеру-фотографа, одну позу из галереи или готовую фотосессию.</p>
       </div>
       <div class="card">
         <span class="num">02</span>
-        <h3>Следуй подсказкам</h3>
+        <h3>Подсказки</h3>
         <p>Голос и метки на экране подскажут, куда шагнуть, как держать телефон и какую позу попросить у модели.</p>
       </div>
       <div class="card">
         <span class="num">03</span>
-        <h3>Снимок делается сам</h3>
-        <p>Когда ракурс совпал, затвор срабатывает автоматически. За одну сессию в галерее появится до 12 кадров.</p>
+        <h3>Снимок</h3>
+        <p>Когда ракурс совпадёт, камера снимет сама. За одну съёмку в галерее появится до 12 кадров.</p>
       </div>
     </div>
   </div>
@@ -174,25 +177,24 @@
 <section id="modes" class="section section--alt">
   <div class="wrap">
     <div class="say">
-      <small>Камера говорит:</small>
-      <h2>«Попросите модель<br>сменить позу»</h2>
-      <p>Три режима: от «просто нажми» до готовой фотосессии.</p>
+      <h2>Выбери, что снимать</h2>
+      <p>Три режима: от быстрого снимка до фотосессии по сценарию.</p>
     </div>
     <div class="cards">
       <div class="card card--big card--accent">
         <span class="tag">Начни отсюда</span>
         <h3>Камера-фотограф</h3>
-        <p>Выбери, что снимать: портрет, по пояс, в полный рост, сидя. Камера сама поведёт от ракурса к ракурсу и снимет до 12 кадров: только ракурс или ракурс с позой.</p>
+        <p>Портрет, по пояс, в полный рост или сидя. Камера проведёт от ракурса к ракурсу и сделает до 12 кадров, с позой или без.</p>
       </div>
       <div class="card card--big">
         <span class="tag tag--spacer" aria-hidden="true" style="visibility: hidden">&nbsp;</span>
         <h3>Одна поза</h3>
-        <p>Выбери картинку из галереи поз, и камера поможет повторить и ракурс, и позу.</p>
+        <p>Выбери картинку из галереи поз, и камера поможет повторить ракурс и позу.</p>
       </div>
       <div class="card card--big">
         <span class="tag tag--spacer" aria-hidden="true" style="visibility: hidden">&nbsp;</span>
         <h3>Фотосессии</h3>
-        <p>Готовые сценарии съёмки от 3 до 12 поз по порядку. Камера снимает, как только поза совпала с образцом.</p>
+        <p>Готовые сценарии от 3 до 12 поз. Камера снимает каждую, как только поза совпадёт с образцом.</p>
       </div>
     </div>
   </div>
@@ -201,12 +203,12 @@
 <section id="privacy" class="section">
   <div class="wrap split">
     <div>
-      <h2 class="h2">Чего камера никогда не скажет: <em>«Загружаю в облако…»</em></h2>
-      <p>Всё распознавание работает прямо на телефоне. Фото и изображение с камеры никуда не отправляются. Ни аккаунта, ни регистрации.</p>
+      <h2 class="h2">Фото остаются у&nbsp;тебя</h2>
+      <p>Распознавание работает прямо на телефоне. Снимки и изображение с камеры никуда не отправляются, аккаунт не нужен.</p>
     </div>
     <ul class="checks">
       <li>Без регистрации и аккаунта</li>
-      <li>Распознавание работает на телефоне</li>
+      <li>Распознавание прямо на телефоне</li>
       <li>Фото сохраняются только в твою галерею</li>
     </ul>
   </div>
@@ -243,6 +245,9 @@
 </section>
 
 </main>
+
+<a class="btn btn--light sticky-get" data-sticky-get href="https://play.google.com/store/apps/details?id=cam.preciosa.smartcamera&amp;referrer=utm_source%3Dsite%26utm_medium%3Dsticky_ru" tabindex="-1" aria-hidden="true">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 3.5v17l14-8.5z"/></svg>Скачать в Google Play</a>
 
 <footer class="wrap footer">
   <span>© 2026 Preciosa</span>
@@ -307,8 +312,8 @@
   "wrong": "Не то — послушай подсказку на экране"
 }
 </script>
-<script src="/assets/site.js?v=20261127" defer></script>
-<script src="/assets/pro.js?v=20261127" defer></script>
-<script src="/assets/neural.js?v=20261127" defer></script>
+<script src="/assets/site.js?v=202611272020" defer></script>
+<script src="/assets/pro.js?v=202611272020" defer></script>
+<script src="/assets/neural.js?v=202611272020" defer></script>
 </body>
 </html>

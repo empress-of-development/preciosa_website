@@ -86,6 +86,31 @@
     });
   }
 
+  // Phone: the Google Play button pinned to the bottom of the screen once the first
+  // screen's button is scrolled away, until the closing button comes into view (on a
+  // wide screen CSS keeps it hidden)
+  var sticky = document.querySelector('[data-sticky-get]');
+  var heroGet = document.querySelector('.hero .btn--light');
+  var ctaGet = document.querySelector('.cta .btn--light');
+  if (sticky && heroGet && ctaGet) {
+    var stickyOn = false, queued = false;
+    var updateSticky = function () {
+      queued = false;
+      var on = heroGet.getBoundingClientRect().bottom < 0 &&
+        ctaGet.getBoundingClientRect().top > window.innerHeight - 90;
+      if (on === stickyOn) return;
+      stickyOn = on;
+      sticky.classList.toggle('is-shown', on);
+      sticky.setAttribute('aria-hidden', on ? 'false' : 'true');
+      sticky.tabIndex = on ? 0 : -1;
+    };
+    window.addEventListener('scroll', function () {
+      if (!queued) { queued = true; requestAnimationFrame(updateSticky); }
+    }, { passive: true });
+    window.addEventListener('resize', updateSticky);
+    updateSticky();
+  }
+
   // Try it: the hints to follow, then the shot
   var root = document.getElementById('try-phone');
   if (!root) return;

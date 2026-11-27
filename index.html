@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Preciosa: a photographer in your pocket</title>
-<meta name="description" content="Preciosa tells you where to stand and how to tilt the phone, and takes the photo itself once the framing is right. On-device: your photos never leave the phone.">
+<meta name="description" content="Preciosa tells you where to stand and how to hold the phone, adjusts the zoom, levels the horizon and takes the photo itself. Your photos never leave the phone.">
 <link rel="canonical" href="https://preciosa.cam/">
 <link rel="alternate" hreflang="en" href="https://preciosa.cam/">
 <link rel="alternate" hreflang="ru" href="https://preciosa.cam/ru/">
 <link rel="alternate" hreflang="x-default" href="https://preciosa.cam/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Preciosa: a photographer in your pocket">
-<meta property="og:description" content="The camera guides from angle to angle and takes the shot itself. Free for Android, works on the phone.">
+<meta property="og:description" content="Hints, auto zoom and a level horizon: the camera guides you from angle to angle and takes the shot itself. Free for Android.">
 <meta property="og:url" content="https://preciosa.cam/">
 <meta property="og:image" content="https://preciosa.cam/assets/icon-512.png">
 <meta name="twitter:card" content="summary">
@@ -20,8 +20,8 @@
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@500;700&display=swap">
-<link rel="stylesheet" href="/assets/style.css?v=20261127">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Tenor+Sans&display=swap">
+<link rel="stylesheet" href="/assets/style.css?v=202611272020">
 </head>
 <body>
 <div class="bg" aria-hidden="true">
@@ -32,16 +32,20 @@
 </div>
 <a class="skip" href="#main">Skip to content</a>
 
-<header class="wrap header">
-  <a class="brand" href="/"><img src="/assets/icon-192.png" alt="" width="36" height="36">Preciosa</a>
-  <nav class="nav" aria-label="Main">
-    <a href="#try">Try it</a>
-    <a href="#how">How it works</a>
-    <a href="#modes">Modes</a>
-    <a href="#privacy">Privacy</a>
-    <a class="lang" href="/ru/" hreflang="ru" lang="ru">RU</a>
-    <a class="pro-badge" href="#pro" aria-label="Pro: get early access"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>PRO</a>
-  </nav>
+<header class="header">
+  <div class="wrap bar">
+    <a class="brand" href="/"><img src="/assets/logo-light.png" alt="" width="54" height="54">Preciosa</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#try">Try it</a>
+      <a href="#how">How it works</a>
+      <a href="#modes">Modes</a>
+      <a href="#privacy">Privacy</a>
+    </nav>
+    <div class="bar-end">
+      <div class="lang-switch"><span class="is-current">EN</span><span class="dot" aria-hidden="true">·</span><a href="/ru/" hreflang="ru" lang="ru">RU</a></div>
+      <a class="pro-badge" href="#pro" aria-label="Pro: get early access"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>PRO</a>
+    </div>
+  </div>
 </header>
 
 <main id="main">
@@ -60,8 +64,8 @@
       <div class="vf-body">
         <div class="hero-text">
           <span class="badge">Free for Android · <span class="nocaps">iOS</span> soon</span>
-          <h1>A photographer<br>in your pocket</h1>
-          <p class="lead">The camera tells you where to stand and how to tilt the phone, and takes the photo itself once the framing is right. Even if the person shooting “can’t take photos”.</p>
+          <h1>A&nbsp;photographer<br>in your pocket</h1>
+          <p class="lead">The camera tells you where to stand and how to hold the phone, adjusts the zoom on its own and levels the horizon. Once the framing is right, it takes the photo itself.</p>
           <div class="btns">
             <a class="btn btn--light" href="https://play.google.com/store/apps/details?id=cam.preciosa.smartcamera&amp;referrer=utm_source%3Dsite%26utm_medium%3Dhero">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 3.5v17l14-8.5z"/></svg>Get it on Google Play</a>
@@ -124,7 +128,7 @@
         <div class="screen-hint"><span data-hint aria-live="polite">Tilt the phone down a little</span></div>
         <div class="flash" aria-hidden="true"></div>
         <div class="shot" hidden>
-          <strong>Click!</strong>
+          <strong>Captured!</strong>
           <span>“Done, you can move”</span>
           <button type="button">Again</button>
         </div>
@@ -146,25 +150,24 @@
 <section id="how" class="section">
   <div class="wrap">
     <div class="say">
-      <small>The camera says:</small>
-      <h2>“Lower the phone a little”</h2>
-      <p>…and a dozen other hints. Three steps to a series of shots:</p>
+      <h2>The camera tells you what to do</h2>
+      <p>All you do is hold the phone and follow the hints.</p>
     </div>
     <div class="cards">
       <div class="card">
         <span class="num">01</span>
-        <h3>Pick a mode</h3>
-        <p>Pocket photographer, one pose from the gallery, or a prepared photo session.</p>
+        <h3>Mode</h3>
+        <p>Pick the pocket photographer, one pose from the gallery, or a prepared photo session.</p>
       </div>
       <div class="card">
         <span class="num">02</span>
-        <h3>Follow the hints</h3>
+        <h3>Hints</h3>
         <p>A voice and marks on the screen tell you where to step, how to hold the phone and which pose to ask the model for.</p>
       </div>
       <div class="card">
         <span class="num">03</span>
-        <h3>The shot takes itself</h3>
-        <p>Once the angle matches, the shutter fires on its own. Up to 12 shots a session, saved to your gallery.</p>
+        <h3>Shot</h3>
+        <p>Once the angle matches, the camera shoots by itself. Up to 12 shots a session land in your gallery.</p>
       </div>
     </div>
   </div>
@@ -173,25 +176,24 @@
 <section id="modes" class="section section--alt">
   <div class="wrap">
     <div class="say">
-      <small>The camera says:</small>
-      <h2>“Ask for a new pose”</h2>
-      <p>Three modes, from “just tap” to a prepared photo session.</p>
+      <h2>Choose what to shoot</h2>
+      <p>Three modes, from a quick shot to a scripted photo session.</p>
     </div>
     <div class="cards">
       <div class="card card--big card--accent">
         <span class="tag">Start here</span>
         <h3>Pocket photographer</h3>
-        <p>Pick what to shoot: portrait, waist up, full length, sitting. The camera leads you from angle to angle and takes up to 12 shots: angle only or angle and pose.</p>
+        <p>Portrait, waist up, full length or sitting. The camera leads you from angle to angle and takes up to 12 shots, with a pose or without.</p>
       </div>
       <div class="card card--big">
         <span class="tag tag--spacer" aria-hidden="true" style="visibility: hidden">&nbsp;</span>
         <h3>Single shot</h3>
-        <p>Pick a picture from the pose gallery, and the camera helps repeat both the angle and the pose.</p>
+        <p>Pick a picture from the pose gallery, and the camera helps you repeat the angle and the pose.</p>
       </div>
       <div class="card card--big">
         <span class="tag tag--spacer" aria-hidden="true" style="visibility: hidden">&nbsp;</span>
         <h3>Photo sessions</h3>
-        <p>Prepared shoots of 3 to 12 poses in order. The camera shoots as soon as the pose matches the reference.</p>
+        <p>Prepared shoots of 3 to 12 poses. The camera takes each one as soon as the pose matches the reference.</p>
       </div>
     </div>
   </div>
@@ -200,8 +202,8 @@
 <section id="privacy" class="section">
   <div class="wrap split">
     <div>
-      <h2 class="h2">What the camera will never say: <em>“Uploading to the cloud…”</em></h2>
-      <p>All recognition runs right on the phone. Your photos and the camera feed are never sent anywhere. No account, no sign-up.</p>
+      <h2 class="h2">Your photos stay with&nbsp;you</h2>
+      <p>Recognition runs right on the phone. Photos and the camera feed are never sent anywhere, and you need no account.</p>
     </div>
     <ul class="checks">
       <li>No sign-up or account</li>
@@ -242,6 +244,9 @@
 </section>
 
 </main>
+
+<a class="btn btn--light sticky-get" data-sticky-get href="https://play.google.com/store/apps/details?id=cam.preciosa.smartcamera&amp;referrer=utm_source%3Dsite%26utm_medium%3Dsticky" tabindex="-1" aria-hidden="true">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 3.5v17l14-8.5z"/></svg>Get it on Google Play</a>
 
 <footer class="wrap footer">
   <span>© 2026 Preciosa</span>
@@ -306,8 +311,8 @@
   "wrong": "Not that one: listen to the hint on the screen"
 }
 </script>
-<script src="/assets/site.js?v=20261127" defer></script>
-<script src="/assets/pro.js?v=20261127" defer></script>
-<script src="/assets/neural.js?v=20261127" defer></script>
+<script src="/assets/site.js?v=202611272020" defer></script>
+<script src="/assets/pro.js?v=202611272020" defer></script>
+<script src="/assets/neural.js?v=202611272020" defer></script>
 </body>
 </html>
