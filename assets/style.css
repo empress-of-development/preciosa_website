@@ -86,8 +86,8 @@ p { margin: 0; }
   .header .pro-badge svg { width: 13px; height: 13px; }
 }
 @media (max-width: 360px) {
-  .brand { font-size: 21px; }
-  .brand img { width: 40px; height: 40px; }
+  .brand { font-size: 19px; }
+  .brand img { width: 36px; height: 36px; }
 }
 
 /* Buttons */
@@ -102,17 +102,24 @@ p { margin: 0; }
 .btn--ghost:hover { background: rgba(255,255,255,0.06); }
 .btn svg { flex-shrink: 0; }
 
-/* Phone: the Google Play button pinned to the bottom of the screen between the first
-   screen's button and the closing one (site.js shows it) */
+/* Phone: a frosted Google Play bubble in the bottom right corner, shown between the
+   first screen's button and the closing one (site.js) */
 .sticky-get { display: none; }
 @media (max-width: 860px) {
   .sticky-get {
-    display: flex; position: fixed; z-index: 30; left: 16px; right: 16px;
+    display: inline-flex; align-items: center; gap: 8px;
+    position: fixed; z-index: 30; right: 16px;
     bottom: calc(16px + env(safe-area-inset-bottom, 0px));
-    box-shadow: 0 12px 32px rgba(0,0,0,0.45);
-    transform: translateY(calc(100% + 40px)); transition: transform 0.3s ease;
+    min-height: 48px; padding: 0 18px 0 16px; border-radius: 99px;
+    background: rgba(255,255,255,0.16); border: 1px solid rgba(255,255,255,0.28);
+    -webkit-backdrop-filter: blur(14px) saturate(1.4); backdrop-filter: blur(14px) saturate(1.4);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.35);
+    color: #fff; font: 600 15px Inter, sans-serif; text-decoration: none;
+    opacity: 0; transform: translateY(24px) scale(0.9); pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
   }
-  .sticky-get.is-shown { transform: none; }
+  .sticky-get.is-shown { opacity: 1; transform: none; pointer-events: auto; }
+  .sticky-get:hover, .sticky-get:active { color: #fff; background: rgba(255,255,255,0.26); }
 }
 /* Not a link yet: the iOS version is coming */
 .btn--soon { border: 1px dashed rgba(255,255,255,0.4); color: #cecbf6; font-weight: 500; cursor: default; }
@@ -294,12 +301,30 @@ a.pro-badge:hover { color: #ffd264; background: rgba(255,210,100,0.18); }
 .legal .meta { color: var(--muted-2); font-size: 15px; }
 
 @media (max-width: 640px) {
+  /* Phone: smaller type throughout, and no network drawn behind (neural.js stops too) */
+  body { font-size: 15px; }
+  .bg canvas { display: none; }
   .section { padding: 64px 0; }
   .viewfinder { padding: 48px 22px 32px; border-radius: 28px; }
-  .hero h1 { font-size: 52px; }
-  .say h2, .h2, .try-text .h2, .split .h2 { font-size: 38px; }
+  .hero h1 { font-size: 44px; }
+  .hero h1:lang(en) { font-size: min(44px, 12.5cqi); }
+  .lead { font-size: 17px; }
+  .facts { font-size: 15px; gap: 8px; }
+  .facts li::before { width: 6px; height: 6px; }
+  .btn { font-size: 15px; }
+  .say h2, .h2, .try-text .h2, .split .h2 { font-size: 32px; }
+  .say p, .try-text p, .split p { font-size: 16px; }
+  .card h3 { font-size: 19px; }
+  .card p, .card--big p { font-size: 15px; }
+  .card--big h3 { font-size: 22px; }
+  .brand { font-size: 21px; }
+  .brand img { width: 40px; height: 40px; }
+  .lang-switch { font-size: 15px; }
+  .header .pro-badge { padding: 7px 13px; font-size: 12px; }
+  .legal h1 { font-size: 32px; }
+  .legal h2 { font-size: 21px; }
   .cta { padding: 40px 22px; }
-  .cta-main h2 { font-size: 34px; }
+  .cta-main h2 { font-size: 28px; }
   .phone { width: 270px; height: 550px; }
   .level-track { width: 150px; }
   .split, .vf-body, .cta { grid-template-columns: minmax(0, 1fr); }

@@ -7,6 +7,8 @@
   if (!canvas || !canvas.getContext) return;
   var ctx = canvas.getContext('2d');
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // Not drawn on a phone (the canvas is hidden there too, see style.css)
+  var phone = window.matchMedia('(max-width: 640px)');
   var points = [];
   var w = 0, h = 0, link = 140, raf = 0, last = 0;
   var PERIOD = 20000; // one loop of the drift, as in the app
@@ -86,7 +88,8 @@
 
   function start() {
     cancelAnimationFrame(raf);
-    if (reduce) draw(0);
+    if (phone.matches) ctx.clearRect(0, 0, w, h);
+    else if (reduce) draw(0);
     else raf = requestAnimationFrame(frame);
   }
 
